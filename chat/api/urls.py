@@ -6,9 +6,8 @@ from .views import UsersViewSet, MessageViewSet, ChatViewSet, MessageInChatViewS
 app_name = "api"
 
 router_1 = DefaultRouter()
-router_1.register("chat", ChatViewSet)
+router_1.register("chats", ChatViewSet)
 router_1.register("messages", MessageViewSet)
-router_1.register("messages_in_chat", MessageInChatViewSet)
 router_1.register("users", UsersViewSet)
 
 
