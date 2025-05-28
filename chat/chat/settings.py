@@ -21,7 +21,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-!5jh8c(!k1k60@nouinnfyrz0@j700ukrwcj*)x6ew!0vrl75)'
-
+# КЛЮЧ ТУДУШНИКА
+# SECRET_KEY = 'django-insecure-x(1yw5l+*1n@i49=!d%t0!ab6e1fw#nppo&i^b6iqkfh6v7w5!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -120,6 +121,8 @@ SIMPLE_JWT = {
     'ROTATE_REFRESH_TOKENS': False,
     'BLACKLIST_AFTER_ROTATION': False,
     'AUTH_HEADER_TYPES': ('Bearer',),
+
+'ALGORITHM': 'HS256',
 }
 
 DJOSER = {

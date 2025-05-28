@@ -21,6 +21,10 @@ class MessageViewSet(ModelViewSet):
             return MessageAddSerializer
         return MessageSerializer
 
+    def perform_create(self, serializer):
+        print("request.user:", self.request.user)
+        print("request.auth:", self.request.auth)
+
 
 class ChatViewSet(ModelViewSet):
     queryset = Chat.objects.all()

@@ -28,6 +28,7 @@ class MessageAddSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         chat = validated_data.pop("chat")
         sender = self.context["request"].user
+        # print("\n"*10, sender, self.context)
         message = Message.objects.create(sender=sender, **validated_data)
         MessagesInChat.objects.create(chat=chat, message=message)
         return message
