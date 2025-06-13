@@ -2,3 +2,5 @@ django
 djangorestframework
 djoser
 djangorestframework-simplejwt
+python-dotenv
+psycopg2-binary
